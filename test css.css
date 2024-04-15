@@ -1,0 +1,38 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+}
+
+.row {
+    display: flex;                    /* 將 row 元素設定為彈性容器 */
+    justify-content: center;         /* 在 row 元素中水平置中其內容 */
+}
+
+.responsive-img {
+    width: 189px;                    /* 設定圖片寬度為 150px */
+    height: 275px;                    /* 讓圖片高度根據寬度自動調整 */
+    margin: 5px;                     /* 設定圖片之間的間距為 5px */
+    transition: transform 0.5s ease-in-out;  /* 設定圖片變換效果，在0.5秒內完成，使用 ease-in-out 動畫效果 */
+}
+
+.responsive-img:hover {
+    transform: scale(1.1);           /* 當游標移至圖片上時，將圖片放大至 1.1 倍 */
+}
+
+.container:hover {
+    background-color: rgba(57, 57, 57, 0.5);  /* 當游標移至容器上時，設定背景色為 rgba(57, 57, 57, 0.5)，即 RGB 值為 57，alpha 值為 0.5 */
+}
+
+.container {
+    transition: background-color 0.5s ease-in-out;  /* 設定容器背景色轉換效果，在0.5秒內完成，使用 ease-in-out 動畫效果 */
+}
